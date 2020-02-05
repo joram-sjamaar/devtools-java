@@ -1,14 +1,12 @@
 package org.saxion.devtools.week1.bookcase.model;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.saxion.devtools.week1.bookcase.model.exceptions.BookCaseOutOfRoomException;
 import org.saxion.devtools.week1.bookcase.model.exceptions.BookNotFoundException;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class BookCaseTest {
 
