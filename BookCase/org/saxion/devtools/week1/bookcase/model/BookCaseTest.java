@@ -35,7 +35,7 @@ public class BookCaseTest {
         BookCase bookCase = new BookCase(0);
 
 
-        Assertions.assertThrows(BookCaseOutOfRoomException.class, () -> {
+        assertThrows(BookCaseOutOfRoomException.class, () -> {
             bookCase.addBook(sampleBook);
         });
     }
@@ -64,7 +64,7 @@ public class BookCaseTest {
 
         // Not adding the book.
 
-        Assertions.assertThrows(BookNotFoundException.class, () -> {
+        assertThrows(BookNotFoundException.class, () -> {
             bookCase.findBooksByAuthor(sampleBook.getAuthor());
         });
     }
