@@ -1,0 +1,2 @@
+Main-Class: org.saxion.devtools.week1.bookcase.Application
+Class-Path: ../lib/json-20190722.jar ../lib/junit-jupiter-api-5.6.0.jar ../lib/apiguardian-api-1.1.0.jar

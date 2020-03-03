@@ -34,7 +34,6 @@ public class BookCaseTest {
     public void addBookToFullCase() {
         BookCase bookCase = new BookCase(0);
 
-
         assertThrows(BookCaseOutOfRoomException.class, () -> {
             bookCase.addBook(sampleBook);
         });
