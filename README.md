@@ -4,7 +4,7 @@ Zelf vond ik de opdrachten leuk en uitdagend, dus bedankt voor een leuk vak!.
 
 ## Documentatie
  * Week 1 t/m 3
-   * [Java Project](docs/opdracht1.md)
+   * [Java Project](docs/week1.md)
  * Week 3 t/m 5)
    * _Webtech Project_
  * Week 6 t/m 8
