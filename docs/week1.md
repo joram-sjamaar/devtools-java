@@ -558,31 +558,3 @@ D:\JavaProjects\DevelopmentToolsJava\109\BookCase-Gradle>gradle build
 BUILD SUCCESSFUL in 1s
 7 actionable tasks: 7 up-to-date
 ```
-
-## Testing the build
-
-#### 1. Run the gradle test directive and see whether the test fails or succeeds.
-
-```
-D:\JavaProjects\DevelopmentToolsJava\109\BookCase-Gradle>gradle test
-
-BUILD SUCCESSFUL in 1s
-3 actionable tasks: 3 up-to-date
-```
-
-#### 2. Look for the test results. They are considered a build artefact. Did the tests succeed?
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.saxion.devtools.week1.bookcase.model.BookCaseTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-03-05T14:41:13" hostname="DESKTOP-13N0A6V" time="0.022">
-  <properties/>
-  <testcase name="findBookByAuthorExists()" classname="org.saxion.devtools.week1.bookcase.model.BookCaseTest" time="0.016"/>
-  <testcase name="addBookToFullCase()" classname="org.saxion.devtools.week1.bookcase.model.BookCaseTest" time="0.002"/>
-  <testcase name="addBookSuccesfull()" classname="org.saxion.devtools.week1.bookcase.model.BookCaseTest" time="0.0"/>
-  <testcase name="checkIfBookCaseHasSpace()" classname="org.saxion.devtools.week1.bookcase.model.BookCaseTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
-```
-
-Ja de tests zijn geslaagd. Dat kun je zien aan `failures="0" errors="0" `.
