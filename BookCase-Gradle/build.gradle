@@ -12,6 +12,12 @@ plugins {
 
     // Apply the application plugin to add support for building a CLI application.
     id 'application'
+
+    // Checkstyle plugin https://docs.gradle.org/current/userguide/checkstyle_plugin.html
+    id 'checkstyle'
+
+    // Spotbugs https://plugins.gradle.org/plugin/com.github.spotbugs
+    id "com.github.spotbugs" version "4.0.1"
 }
 
 repositories {
@@ -32,6 +38,8 @@ dependencies {
 
     // Use JUnit Jupiter Engine for testing.
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
+
+    spotbugsPlugins 'com.h3xstream.findsecbugs:findsecbugs-plugin:1.7.1'
 }
 
 application {
@@ -42,4 +50,14 @@ application {
 test {
     // Use junit platform for unit tests
     useJUnitPlatform()
+}
+
+spotbugsMain {
+    reports {
+        html {
+            enabled = true
+            destination = file("$buildDir/reports/spotbugs/main/spotbugs.html")
+            stylesheet = 'fancy-hist.xsl'
+        }
+    }
 }

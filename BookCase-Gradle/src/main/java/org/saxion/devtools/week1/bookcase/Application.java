@@ -75,4 +75,9 @@ public class Application {
         return result;
     }
 
+    public boolean kanker() {
+        System.exit(1);
+        return true;
+    }
+
 }
