@@ -6,7 +6,14 @@ In dit project werken we aan de **Java** opdracht. Hierin werken we aan:
  * ~~Multi-module projecten~~
  
 ## Inhoudsopgave
- T.B.A.
+- [Java Project: Week 2](#java-project--week-2)
+  * [Inhoudsopgave](#inhoudsopgave)
+  * [Checking coding  standards   with    Checkstyle](#checking-coding--standards---with----checkstyle)
+  * [Finding bugs with SpotBugs](#finding-bugs-with-spotbugs)
+  * [Code Coverage with JaCoCo](#code-coverage-with-jacoco)
+  * [Using integrated platforms: SonarQube](#using-integrated-platforms--sonarqube)
+  * [Do it yourself!](#do-it-yourself-)
+      - [Errors](#errors)
  
 ## Checking	coding	standards	with	Checkstyle
  

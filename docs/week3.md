@@ -6,9 +6,13 @@ In dit project werken we aan de **Java** opdracht. Hierin werken we aan:
  * Multi-module projecten
  
 ## Inhoudsopgave
- T.B.A.
+- [Java Project: Week 3](#java-project--week-3)
+  * [Inhoudsopgave](#inhoudsopgave)
+  * [Splitting up the project.](#splitting-up-the-project)
+  * [Making sure it works!](#making-sure-it-works-)
+  * [Submit your Java project](#submit-your-java-project)
  
-## Splitting	up	the	project.
+## Splitting up the project.
  
 #### 5. Run gradle tasks and notice the difference(s) between the project from last week and this week
 
@@ -28,3 +32,6 @@ Die kun je nu indivueel runnen per module. De output van deze wordt geplaatst in
 If you can read this, the import was succesful!
 ```
 
+## Submit your Java project
+
+Ik weet dat checkStyle meerdere keren runt. Dit is express, omdat ik wil voldoen aan de eis 'maak een extra stap voor checkstyle en Spotbugs'.

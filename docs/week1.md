@@ -6,7 +6,15 @@ In dit project werken we aan de **Java** opdracht. Hierin werken we aan:
  * ~~Multi-module projecten~~
  
 ## Inhoudsopgave
- T.B.A.
+- [Java Project: Week 1](#java-project--week-1)
+  * [Inhoudsopgave](#inhoudsopgave)
+  * [Deploying a Java product without Gradle](#deploying-a-java-product-without-gradle)
+  * [Deploying a Java product with dependencies without Gradle](#deploying-a-java-product-with-dependencies-without-gradle)
+  * [Gradle-fying the build](#gradle-fying-the-build)
+  * [Experimenting with your first program using Gradle](#experimenting-with-your-first-program-using-gradle)
+  * [Getting the BookCase program to work](#getting-the-bookcase-program-to-work)
+  * [Testing the build](#testing-the-build)
+ 
  
 ## Deploying a Java product without Gradle
  
