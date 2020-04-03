@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    compile project(':core')
+    implementation project(':core')
     implementation group: 'org.json', name: 'json', version: '20190722'
 }
 

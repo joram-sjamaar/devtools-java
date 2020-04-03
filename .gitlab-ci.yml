@@ -13,10 +13,12 @@ before_script:
 
 build:
   stage: build
-  script: gradle --build-cache assemble
+  script:
+    - gradle --build-cache assemble
+    - gradle jar
   artifacts:
     paths:
-      - ./BookCase-Gradle/build.jar
+      - ./BookCaseMultiProject/app/build/libs/app.jar
     expire_in: 1 week
   cache:
     key: "$CI_COMMIT_REF_NAME"
@@ -25,13 +27,19 @@ build:
       - ./BookCaseMultiProject/build
       - ./BookCaseMultiProject/.gradle
 
-
 test:
   stage: test
-  script: gradle check
+  script:
+    - gradle check
+    - gradle app:checkstyleMain
+    - gradle app:checkstyleTest
+    - gradle core:checkstyleMain
+    - gradle core:checkstyleTest
+    - gradle core:spotbugsMain
+    - gradle core:spotbugsTest
   cache:
     key: "$CI_COMMIT_REF_NAME"
     policy: push
     paths:
-      - ./BookCase-Gradle/build
-      - ./BookCase-Gradle/.gradle
+      - ./BookCaseMultiProject/build
+      - ./BookCaseMultiProject/.gradle
