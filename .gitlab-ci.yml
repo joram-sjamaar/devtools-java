@@ -8,7 +8,7 @@ stages:
   - test
 
 before_script:
-  - ls
+  - cd ./BookCase-Gradle
   - export GRADLE_USER_HOME=`pwd`/.gradle
 
 build:
