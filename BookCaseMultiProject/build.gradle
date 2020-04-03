@@ -1,12 +1,15 @@
 allprojects {
-
-}
-
-subprojects {
     repositories {
         jcenter()
     }
+}
 
+subprojects {
     apply plugin: "java"
-    apply plugin: "application"
+    apply plugin: "checkstyle"
+
+    dependencies {
+        // This dependency is used by the application.
+        implementation 'com.google.guava:guava:28.1-jre'
+    }
 }
