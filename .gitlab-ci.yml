@@ -8,7 +8,7 @@ stages:
   - test
 
 before_script:
-  - cd ./BookCase-Gradle
+  - cd ./BookCaseMultiProject
   - export GRADLE_USER_HOME=`pwd`/.gradle
 
 build:
@@ -18,8 +18,8 @@ build:
     key: "$CI_COMMIT_REF_NAME"
     policy: push
     paths:
-      - ./BookCase-Gradle/build
-      - ./BookCase-Gradle/.gradle
+      - ./BookCaseMultiProject/build
+      - ./BookCaseMultiProject/.gradle
 
 
 test:
