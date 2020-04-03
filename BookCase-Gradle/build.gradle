@@ -17,7 +17,13 @@ plugins {
     id 'checkstyle'
 
     // Spotbugs https://plugins.gradle.org/plugin/com.github.spotbugs
-    id "com.github.spotbugs" version "4.0.1"
+    id "com.github.spotbugs" version "4.0.5"
+
+    // JaCoCo https://docs.gradle.org/current/userguide/jacoco_plugin.html
+    id 'jacoco'
+
+    // SonarQube
+    id "org.sonarqube" version "2.7"
 }
 
 repositories {
