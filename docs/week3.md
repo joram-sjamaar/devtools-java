@@ -23,5 +23,8 @@ Die kun je nu indivueel runnen per module. De output van deze wordt geplaatst in
 
 ## Making sure it works!
 
-
+```
+> Task :otherapp:run
+If you can read this, the import was succesful!
+```
 
