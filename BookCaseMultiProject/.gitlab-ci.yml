@@ -1,0 +1,12 @@
+default:
+  image: gradle:jdk11
+
+build:
+  inherit:
+    default: [image]
+  script: gradlew build
+
+test:
+  inherit:
+    default: [image]
+  script: gradlew test
